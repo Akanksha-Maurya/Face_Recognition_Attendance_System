@@ -21,10 +21,10 @@ class FaceRecognition_Sysytem:
 
         #for background image
         imge1 = Image.open(r"ImageFolder\bng-img.jpg")
-        imge1 = imge1.resize((1300, 580), Image.ANTIALIAS)
+        imge1 = imge1.resize((1300, 610), Image.ANTIALIAS)
         self.imgPhoto1 = ImageTk.PhotoImage(imge1)
         bng_img= Label(self.root, image=self.imgPhoto1)
-        bng_img.place(x=0, y=70, width=1300, height=580)
+        bng_img.place(x=0, y=70, width=1300, height=610)
 
         def time():
             string=strftime("%H:%M:%S %p")
