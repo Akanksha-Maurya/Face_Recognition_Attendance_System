@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS `myproject` /*! 40100 DEFAULT CHARACTER SET utf8 */;
+CREATE DATABASE IF NOT EXISTS `myproject` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `myproject`;
 -- MySQL dump 10.13  Distrib 8.0.29, for Win64 (x86_64)
 --
