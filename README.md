@@ -35,4 +35,13 @@ Python, OpenCV, Tkinter GUI, MySQL
 
 
 ### Look of the App
+![Login](https://user-images.githubusercontent.com/97236755/170465402-4fa7053b-4fd4-41a4-8019-f495da2fec9d.png)
+![Forgot Password](https://user-images.githubusercontent.com/97236755/170465441-cd467232-ffb9-4ab3-8951-4f5a33acd9af.png)
+![Register](https://user-images.githubusercontent.com/97236755/170465470-cba6b0ff-0a6d-4692-b4a7-022477075ac4.png)
+![Homepage](https://user-images.githubusercontent.com/97236755/170465493-a906eb12-a3cd-4409-950c-d374ef44605a.png)
+![Student Management System](https://user-images.githubusercontent.com/97236755/170465526-f0e1bebd-8a27-4f06-96f4-15468f0da7de.png)
+![Photos](https://user-images.githubusercontent.com/97236755/170465567-5abacace-dca8-40a5-86a8-0da54d090f57.png)
+![Training Data ](https://user-images.githubusercontent.com/97236755/170465620-784a8c70-971a-4ded-8379-104053091256.png)
+![Face Recognition](https://user-images.githubusercontent.com/97236755/170465670-f2c2134c-d4d1-4a41-b5ec-8fa4293f1b56.png)
+![Exit](https://user-images.githubusercontent.com/97236755/170465698-ae0ef893-172f-422b-b5a8-e20465d66396.png)
 
