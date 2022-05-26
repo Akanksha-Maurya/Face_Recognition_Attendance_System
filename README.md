@@ -41,7 +41,7 @@ Project start with login.py
 For installation of pip after installing Python 3.10.4, you have to change the path that is in environment variables in advanced system settings of your computer.You have to click the path and after that if you see anything related to python there then delete it. After then click on New button,and then add the path of the folder where you have installed the Python. Now again click on New button and add the path where your pip.exe file is present. Then after that you have to restart your terminal or code editor.
 
 Create the database exactly like me that I have provided in the database folder and change the username and password according to your database in connector.py.
-After creating your own database just delete all the photosamples and list of students in attendance report that are provided already.
+After creating your own database just delete all the photosamples and list of students in attendance.csv that are provided already.
  
 ### Look of the App
 ### Login Page
