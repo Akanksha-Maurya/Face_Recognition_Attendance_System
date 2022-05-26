@@ -11,6 +11,9 @@ from student import Student
 from train import Train
 from face_Recogniser import FaceRecogniser
 from attendance import Attendance
+from connector import *
+
+
 
 class loginWindow:
     def __init__(self,root):
@@ -92,7 +95,7 @@ class loginWindow:
             messagebox.showwarning("Warning","Both fields are required")
 
         else:
-            conn = mysql.connector.connect(host="localhost", username="root", password="ak201020", database="login")
+            conn = mysql.connector.connect(host="localhost", username=t, password=k, database="login")
             cur = conn.cursor()
             cur.execute("select * from reg where Email_ID=%s and PassWord=%s", (
                                                                                  self.userVar.get(),
@@ -122,7 +125,7 @@ class loginWindow:
         elif (self.PassWVar.get() == ""):
             messagebox.showerror("Error", "Please Enter the New Password", parent=self.root2)
         else:
-            conn = mysql.connector.connect(host="localhost", username="root", password="ak201020", database="login")
+            conn = mysql.connector.connect(host="localhost", username=t, password=k, database="login")
             cur = conn.cursor()
             cur.execute(("select * from reg where Email_ID=%s and SecurityQ=%s and SecurityA=%s"),(
                                                                                       self.userVar.get(),
@@ -143,7 +146,7 @@ class loginWindow:
         if self.userVar.get() == "":
             messagebox.showerror("Error", "Please Enter the Email ID to reset Password!")
         else:
-            conn = mysql.connector.connect(host="localhost", username="root", password="ak201020", database="login")
+            conn = mysql.connector.connect(host="localhost", username=t, password=k, database="login")
             cur = conn.cursor()
             cur.execute(("select * from reg where Email_ID=%s"), (self.userVar.get(),))
             row = cur.fetchone()

@@ -3,6 +3,7 @@ from tkinter import ttk
 from PIL import Image, ImageTk
 from tkinter import messagebox
 from time import strftime
+from connector import *
 import mysql.connector
 import cv2
 
@@ -256,7 +257,7 @@ class Student:
             messagebox.showwarning("Warning","All fields are required",parent=self.root)
         else:
             try:
-                connection=mysql.connector.connect(host="localhost",username="root",password="ak201020",database="myproject")
+                connection=mysql.connector.connect(host="localhost", username=t, password=k, database="myproject")
                 cur=connection.cursor()
                 cur.execute("insert into student values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(
                                                                                             self.DepVar.get(),
@@ -280,7 +281,7 @@ class Student:
 
     #for fetching the data from the database to the table
     def fetchingData(self):
-        connection = mysql.connector.connect(host="localhost", username="root", password="ak201020",database="myproject")
+        connection = mysql.connector.connect(host="localhost", username=t, password=k, database="myproject")
         cur = connection.cursor()
         cur.execute("select * from student")
         data=cur.fetchall()
@@ -316,7 +317,7 @@ class Student:
             try:
                 Update=messagebox.askyesno("Update","Do you want to update this already filled details",parent=self.root)
                 if Update>0:
-                    connection = mysql.connector.connect(host="localhost", username="root", password="ak201020",database="myproject")
+                    connection = mysql.connector.connect(host="localhost", username=t, password=k, database="myproject")
                     cur = connection.cursor()
                     cur.execute("Update student set `Department`=%s, `Course`=%s,`Session_Year`=%s,`Semester`=%s,`Name`=%s,`Email_Id`=%s,`Mobile_No`=%s,`Gender`=%s,`Address`=%s,`PhotoStatus`=%s where `Student_Id`=%s",(
                                                                                                                                                                                       self.DepVar.get(),
@@ -351,7 +352,7 @@ class Student:
             try:
                 delt=messagebox.askyesno("Delete","Do you want to delete this data",parent=self.root)
                 if delt>0:
-                    connection = mysql.connector.connect(host="localhost", username="root", password="ak201020",database="myproject")
+                    connection = mysql.connector.connect(host="localhost", username=t, password=k, database="myproject")
                     cur = connection.cursor()
                     sql="delete from student where Student_Id=%s"
                     value=(self.IdVar.get(),)
@@ -386,7 +387,7 @@ class Student:
             messagebox.showerror("Error", "Select Combo option and Enter entry box", parent=self.root)
         else:
             try:
-                connection = mysql.connector.connect(host="localhost", username="root", password="ak201020",database="myproject")
+                connection = mysql.connector.connect(host="localhost", username=t, password=k, database="myproject")
                 cur = connection.cursor()
                 cur.execute("SELECT * FROM student WHERE " +str(self.searComboVar.get())+" LIKE '%"+str(self.seaEntryVar.get())+"%'")
                 rows = cur.fetchall()
@@ -407,7 +408,7 @@ class Student:
                messagebox.showwarning("Warning","All fields are required",parent=self.root)
         else:
             try:
-                connection = mysql.connector.connect(host="localhost", username="root", password="ak201020",database="myproject")
+                connection = mysql.connector.connect(host="localhost", username=t, password=k, database="myproject")
                 cur = connection.cursor()
                 cur.execute("select * from student")
                 ans=cur.fetchall()
