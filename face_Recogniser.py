@@ -1,13 +1,10 @@
 from tkinter import*
-from tkinter import ttk
 from PIL import Image, ImageTk
-from tkinter import messagebox
 from time import strftime
 from datetime import datetime
 import mysql.connector
+from connector import *
 import cv2
-import os
-import numpy as np
 
 
 class FaceRecogniser:
@@ -71,7 +68,7 @@ class FaceRecogniser:
                     id,predict=clsf.predict(grayImage[y:y+h,x:x+w])
                     confidence=int((100*(1-predict/300)))
 
-                    connection = mysql.connector.connect(host="localhost", username="root", password="ak201020",database="myproject")
+                    connection = mysql.connector.connect(host="localhost", username=t, password=k, database="myproject")
                     cur = connection.cursor()
 
                     cur.execute("select Department from student where Student_Id="+str(id))
