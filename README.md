@@ -57,7 +57,7 @@ After creating your own database just delete all the photosamples and list of st
 ### Photosamples
 ![Photos](https://user-images.githubusercontent.com/97236755/170465567-5abacace-dca8-40a5-86a8-0da54d090f57.png)
 ### While Training Data
-![Training Data ](https://user-images.githubusercontent.com/97236755/170465620-784a8c70-971a-4ded-8379-104053091256.png)
+![Training Data1](https://user-images.githubusercontent.com/97236755/170547357-5d55aab6-d455-4095-b4cb-48c035dba9ad.png)
 ### While Face Recognition
 ![Face Recognition](https://user-images.githubusercontent.com/97236755/170465670-f2c2134c-d4d1-4a41-b5ec-8fa4293f1b56.png)
 ### Attendance 
