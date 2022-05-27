@@ -44,7 +44,7 @@ class loginWindow:
 
         #label  and entry for username
         self.userVar=StringVar()
-        userNameLbl=Label(frame,text="Username",font=("Rubik",16,"bold"),bg="#4E4F50",fg="black")
+        userNameLbl=Label(frame,text="User Id",font=("Rubik",16,"bold"),bg="#4E4F50",fg="black")
         userNameLbl.place(x=50,y=150)
 
         userEntry=ttk.Entry(frame,textvariable=self.userVar,font=("Rubik",12,"bold"))
