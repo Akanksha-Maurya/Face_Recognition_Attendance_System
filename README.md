@@ -38,7 +38,7 @@ Project start with login.py
  
 For installation of pip after installing Python 3.10.4, you have to change the path that is in environment variables in advanced system settings of your computer.You have to click the path and click on edit button and after that if you see anything related to python there then delete it. After then click on New button,and then add the path where you have installed the Python. Now again click on New button and add the path where your pip.exe file is present.Then click Ok everywhere. Then after that you have to restart your terminal or code editor.
 
-Import the database into your MySQL workbench(I have provided in the database folder) and just change the host, username and password value according to you in connector.py file.
+Import the database(I have provided in the database folder) into your MySQL workbench and just change the host, username and password value according to you in connector.py file.
  
 ### Look of the App
 ### Login Page
