@@ -68,7 +68,7 @@ class FaceRecogniser:
                     id,predict=clsf.predict(grayImage[y:y+h,x:x+w])
                     confidence=int((100*(1-predict/300)))
 
-                    connection = mysql.connector.connect(host="localhost", username=t, password=k, database="myproject")
+                    connection = mysql.connector.connect(host=m, username=t, password=k, database="myproject")
                     cur = connection.cursor()
 
                     cur.execute("select Department from student where Student_Id="+str(id))
