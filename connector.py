@@ -1,4 +1,4 @@
-m="localhost"
+m="localhost" #host
 t="root"     #username
 k="ak201020" #password
 
