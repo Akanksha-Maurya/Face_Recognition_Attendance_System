@@ -31,9 +31,7 @@ Python, OpenCV, Tkinter GUI, MySQL
       
       v)Connector/Python 8.0.29 -X64
       
-      vi)MySQL Documentation 8.0.29 -X86
-      
-  viii)cx-Freeze 6.10    
+      vi)MySQL Documentation 8.0.29 -X86   
       
 ### Special Instructions
 Project start with login.py
